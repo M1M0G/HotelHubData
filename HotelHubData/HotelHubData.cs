@@ -19,8 +19,7 @@ namespace HotelHubData
         /// </summary>
         public string CancelBooking { get; set; }
 
-}
-
+    }
 
     /// <summary>
     /// Номера 
@@ -33,7 +32,7 @@ namespace HotelHubData
         public DateTime Residency { get; set; }
         
         /// <summary>
-        /// Количество человек
+        /// Номера с подходящим количеством человек
         /// </summary>
         public int NumberOfPersons { get; set; }
 
@@ -46,22 +45,6 @@ namespace HotelHubData
         /// Фотография номера
         /// </summary>
         public byte[] Photo { get; set; }
-    }
-
-    /// <summary>
-    /// Начальная страница
-    /// </summary>
-    public class StartPage
-    {
-        /// <summary>
-        /// Новости Отеля
-        /// </summary>
-        public string News { get; set; }
-
-        /// <summary>
-        /// Авторизация
-        /// </summary>
-        public List<Autorization> Autorization { get; set; }
     }
 
     /// <summary>
@@ -83,21 +66,5 @@ namespace HotelHubData
         /// Почта
         /// </summary>
         public string Mail { get; set; }
-    }
-
-    /// <summary>
-    /// Обратная связь
-    /// </summary>
-    public class FeedBack
-    {
-        /// <summary>
-        /// Сообщение пользователя
-        /// </summary>
-        public string User { get; set; }
-
-        /// <summary>
-        /// Письмо от Администратора/Сообщение от Администратора
-        /// </summary>
-        public string Admin { get; set; }
     }
 }
